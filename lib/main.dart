@@ -47,35 +47,43 @@ class _MyAppState extends State<MyApp> {
 
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: Color(0xFFFFF7E7),
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 30, right: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Image.asset(
+        backgroundColor: Color(0xFFFFF7E7),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 30, right: 30),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      // Add your action for the first button here
+                      print("Milk GIF tapped");
+                    },
+                    child: Image.asset(
                       'assets/milk.gif',
                       width: 64,
                       height: 67,
                     ),
-                    Image.asset(
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      // Add your action for the second button here
+                      print("Think GIF tapped");
+                    },
+                    child: Image.asset(
                       'assets/think.gif',
                       width: 80,
                       height: 85,
-                    )
-                  ],
-                ),
+                    ),
+                  )
+                ],
               ),
-              Image.asset(
-                'assets/catty_s.png',
-                width: cattynw,
-                height: cattynh,
-              )
-            ],
-          )),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
