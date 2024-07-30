@@ -9,10 +9,10 @@ A fun Flutter app designed to help you ask someone out! The app features a simpl
 
 ## Screenshots
 
-![Home Screen](screenshots/ss.png)
+![Home Screen](Screenshots/ss.png)
 _The main screen where the question is asked._
 
-![Home Screen 2](screenshots/ss1.png)
+![Home Screen 2](Screenshots/ss1.png)
 _The main screen where the question is asked._
 
 ## Installation
